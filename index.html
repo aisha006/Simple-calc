@@ -10,6 +10,21 @@
     <div class="calculator">
         <div class="display" id="display">0</div>
         <button onclick="clearDisplay()">C</button>
+        <button value="pi"onclick="appendToDisplay('pi')">PI</button>
+        <button value="^"onclick="appendToDisplay(power)">^</button>
+        <button value="log()" onclick="appendToDisplay(base10Log)">LOG()</button>
+        <button value="sqrt" onclick="appendToDisplay(squareRoot)">SQRT</button> 
+        <button value="exp" onclick="appendToDisplay(exp)">EXP</button>
+        <button value="E" onclick="appendToDisplay(e)">E</button>
+        <button value="%" onclick="appendToDisplay(percentage)">%</button>
+        <button value="sin()" onclick="appendToDisplay(sin)">SIN</button>
+        <button value="cos()" onclick="appendToDisplay(cos)">COS</button>
+        <button value="tan()" onclick="appendToDisplay(tan)">TAN</button>
+        <button value="del" onclick="appendToDisplay(delete)">DEL</button> 
+        <button onclick="appendToDisplay('!')">!</button>
+        <button onclick="appendToDisplay('(')">(</button>
+        <button onclick="appendToDisplay(')')">)</button>
+        <button onclick="appendToDisplay(',')">,</button>  
         <button onclick="appendToDisplay('7')">7</button>
         <button onclick="appendToDisplay('8')">8</button>
         <button onclick="appendToDisplay('9')">9</button>
@@ -23,9 +38,10 @@
         <button onclick="appendToDisplay('3')">3</button>
         <button onclick="appendToDisplay('*')">*</button>
         <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')"></button>
+        <button onclick="appendToDisplay('.')">.</button>
         <button onclick="calculateResult()">=</button>
         <button onclick="appendToDisplay('/')">/</button>
+        
     </div>
     <script src="script.js"></script>
 </body>    
